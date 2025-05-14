@@ -1,0 +1,63 @@
+ion-content {
+  --background: rgb(191, 182, 182);
+  --background: linear-gradient(150deg, rgb(0, 147, 135), rgb(25, 100, 0));
+
+  h1,
+  p {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    font-family: "Segoe UI";
+  }
+
+  :nth-child(1) {
+    margin-top: 6rem;
+  }
+
+  img {
+    width: 17rem;
+  }
+}
+
+.ml12 {
+  font-weight: 200;
+  font-size: 1.8em;
+  letter-spacing: 0.5em;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.rotate-in-center {
+  -webkit-animation: rotate-in-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: rotate-in-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes rotate-in-center {
+  0% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+@keyframes rotate-in-center {
+  0% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    opacity: 1;
+  }
+}

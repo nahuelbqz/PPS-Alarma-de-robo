@@ -1,0 +1,74 @@
+ion-content {
+  --background: linear-gradient(150deg, rgb(0, 147, 135), rgb(25, 100, 0));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.btn-desactivado {
+  height: 86vh;
+  width: 100%;
+  border: 4px solid #000000;
+  border-radius: 20px;
+  background: linear-gradient(164deg, rgb(7, 91, 84), rgb(35, 116, 8));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-desactivado:active {
+  transform: scale(0.9);
+  box-shadow: 0 0 16px rgb(252, 248, 1);
+  transition: transform 0.3s;
+}
+
+.btn-activado {
+  height: 80vh;
+  width: 100%;
+  border: 4px solid #dfdb02;
+  border-radius: 20px;
+  background: linear-gradient(164deg, black, red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 8px black;
+}
+
+.items {
+  --background: #ffffff;
+  margin: 0 auto;
+  border: 2px solid #dfdb02;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.btn-desactivar {
+  --background: rgb(243, 210, 21);
+  --color: #000;
+  font-weight: bolder;
+  animation-name: change-back;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.logout-button {
+  --background: rgb(75, 111, 255);
+  --color: #000;
+  font-weight: bolder;
+  animation-name: change-back;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+ion-grid {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

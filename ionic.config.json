@@ -1,0 +1,7 @@
+{
+  "name": "alarma-robo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

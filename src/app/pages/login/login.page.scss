@@ -1,0 +1,77 @@
+ion-content {
+  --background: linear-gradient(150deg, rgb(0, 147, 135), rgb(25, 100, 0));
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.titulo {
+  margin-top: 4vh;
+  font-weight: bold;
+  font-size: 45px;
+}
+
+p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.login-box {
+  padding: 8px;
+  border-radius: 15px;
+  border: 5px double rgb(255, 255, 255);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.bottom-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  // margin: 15px 0;
+}
+.autocompletar-button {
+  font-weight: bold;
+  font-size: 20px;
+  --background: rgb(255, 255, 255);
+  color: #000000;
+}
+
+ion-input {
+  --padding-start: 15px;
+  height: 50px;
+  width: 300px;
+  --background: white;
+  color: #000000;
+}
+
+.validators {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(252, 73, 73);
+}
+
+.login-button {
+  margin-top: 20px;
+  border-radius: 10px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 20x;
+
+  --background: rgb(255, 255, 255);
+  color: #000000;
+}
+
+.logo-container img {
+  margin-top: 20px;
+  height: 100px;
+}

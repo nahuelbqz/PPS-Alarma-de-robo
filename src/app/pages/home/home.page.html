@@ -1,0 +1,44 @@
+<ion-content>
+  <div
+    style="margin-top: 12px; height: 100%; width: 100%; display: flex; justify-content: center; align-items: center;">
+
+    <!--  BOTÓN DESACTIVADO  -->
+    <div *ngIf="!alarmActivated" style="width: 92%; max-width: 500px;">
+      <ion-grid>
+        <ion-row>
+          <ion-col class="btn-desactivado" (click)="activateAlarm()">
+            <img src="../../assets/alarma-des.png" alt="" *ngIf="!alarmActivated" />
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-button expand="block" fill="solid" type="button" class="logout-button" (click)="cerrarSesion()">
+        <ion-text style="font-weight: bold; font-size: 30px;">CERRAR SESIÓN</ion-text>
+      </ion-button>
+    </div>
+
+    <!--  BOTÓN ACTIVADO  -->
+    <div *ngIf="alarmActivated" style="width: 92%; max-width: 500px;">
+      <ion-grid>
+        <ion-row>
+          <ion-col class="btn-activado">
+            <img src="../../assets/alarma-act.png" alt="" />
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-item class="items">
+              <ion-input style="color: black" [(ngModel)]="password" name="clave" type="password" required color="dark"
+                placeholder="Contraseña">
+              </ion-input>
+            </ion-item>
+            <ion-button expand="block" fill="solid" type="button" class="btn-desactivar" (click)="desactivateAlarm()">
+              <ion-text style="font-weight: bold; font-size: 30px;">APAGAR</ion-text>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+  </div>
+</ion-content>
